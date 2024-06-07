@@ -1,0 +1,89 @@
+:root {
+    --app-background-dark: #181720;
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    outline: 0;
+    border-style: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font: inherit;   
+}
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", "sans-serif", Arial, sans-serif;
+    line-height: 1.4;
+    background-color: var(--app-background-dark);
+}
+
+.app {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.selected, .not-selected {
+    font-size: 50px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+h2 {
+    color: #fff;
+    height: 20px;
+    text-align: center;
+}
+
+.selected {
+    color: goldenrod;
+}
+
+.not-selected {
+    color: lightslategrey;
+}
+
+.open-dialog {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #8a2be2;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.open-dialog:hover {
+    background-color: rgba(138, 43, 226, 0.6);
+}
+
+.dialog-title {
+    color: #151313;
+    text-transform: uppercase;
+}
+
+.dialog-content {
+    margin-top: 30px;
+}
+
+.dialog-actions button {
+    padding: 10px 20px;
+    background-color: #a52a2a;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.dialog-actions button:hover {
+    background-color: rgb(165 42 42 / 95%);
+}
